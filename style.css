@@ -7,7 +7,7 @@
 }
 
 .banner {
-    width: 100%;
+    width: calc(100%-392px);
     height: 807px;
     background: #252B42;
     padding: 100px 196px;
@@ -49,7 +49,7 @@
 .bottom {
     width: 100%;
     height: 1000px;
-    background: #c79a9a;
+    background: #FAFAFA;
     position: relative;
     ;
     display: flex;
@@ -63,7 +63,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: -50%;
+    transform: translateY(-50%);
 }
 
 .form_image {
@@ -83,6 +83,8 @@
 }
 
 .form_title {
+    width: 100%;
+    text-align: center;
     font-size: 24px;
     color: #252B42;
     font-weight: 700;
@@ -97,7 +99,7 @@
 }
 
 .form_input_text {
-    width: 100%;
+    width: calc(100% - 42px);
     padding: 11px 21px;
     border: none;
     border: 1px solid #737373;
