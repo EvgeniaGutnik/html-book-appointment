@@ -50,6 +50,10 @@
     width: 100%;
     height: 1000px;
     background: #c79a9a;
+    position: relative;
+    ;
+    display: flex;
+    justify-content: center;
 }
 
 .form {
@@ -58,6 +62,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: -50%;
 }
 
 .form_image {
@@ -87,6 +93,7 @@
     font-size: 14px;
     font-weight: 600;
     color: #252B42;
+    margin-bottom: 10px;
 }
 
 .form_input_text {
@@ -98,6 +105,31 @@
     font-size: 14px;
     font-weight: 400;
     color: #737373;
-    margin-bottom: 40px;
-    background: #E5E5E5;
+    margin-bottom: 10px;
+    background: #F9F9F9;
+}
+
+.form_input_text:focus {
+    outline: none;
+}
+
+.form_button {
+    width: 100%;
+    padding: 15px 40px;
+    background: #23A6F0;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 55px;
+    transition-duration: 0.3s;
+
+}
+
+.form_button:hover {
+    transform: scale(1.1);
+    background: #179dea;
+    transition-duration: 0.5s;
 }
